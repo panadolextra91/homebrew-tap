@@ -1,20 +1,20 @@
 class RustToYou < Formula
   desc "🦀 Ferris rushes to a GitHub repo so you don't have to — a playful bilingual (VI+EN) CLI/TUI repository investigation report."
   homepage "https://github.com/panadolextra91/rust-to-you"
-  version "1.1.0"
+  version "1.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/panadolextra91/rust-to-you/releases/download/v1.1.0/rust-to-you-aarch64-apple-darwin.tar.xz"
-      sha256 "6b657d53db024a6e4ac9e003f7ad3b12e452f96740daa78e41c462d79b675e98"
+      url "https://github.com/panadolextra91/rust-to-you/releases/download/v1.2.0/rust-to-you-aarch64-apple-darwin.tar.xz"
+      sha256 "4a80f2505028ad80f25875e34909e95084cf4f6973643eb994f0709bc6fcca42"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/panadolextra91/rust-to-you/releases/download/v1.1.0/rust-to-you-x86_64-apple-darwin.tar.xz"
-      sha256 "22dbb8e8707474d55dfd0ecbc3a33128ba35b81b85b34153643c614652f9c0a1"
+      url "https://github.com/panadolextra91/rust-to-you/releases/download/v1.2.0/rust-to-you-x86_64-apple-darwin.tar.xz"
+      sha256 "d66dfff9a9467bc2a6cce5df297c1a5026ff1fa96f9c5a2afb4656e052007e95"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/panadolextra91/rust-to-you/releases/download/v1.1.0/rust-to-you-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "6546b2a30474a5d183b637343c5c77b665c9ae718575e79cb16d8438c236201b"
+    url "https://github.com/panadolextra91/rust-to-you/releases/download/v1.2.0/rust-to-you-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "af50629ea5f0eaf9f2fce788de0d6b79eb3d5756f3fc9bbb7cd837e9151f02f0"
   end
   license any_of: ["MIT", "Apache-2.0"]
 
